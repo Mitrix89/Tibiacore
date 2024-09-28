@@ -3104,6 +3104,18 @@ void Player::onAddCombatCondition(ConditionType_t type)
 		sendTextMessage(MESSAGE_STATUS_DEFAULT, "You are electrified.");
 		break;
 
+		case CONDITION_HOLY:
+			sendTextMessage(MESSAGE_STATUS_DEFAULT, "You are being punished.");
+			break;
+
+		case CONDITION_ICE:
+			sendTextMessage(MESSAGE_STATUS_DEFAULT, "You are freezing.");
+			break;
+
+		case CONDITION_DEATH:
+			sendTextMessage(MESSAGE_STATUS_DEFAULT, "You are dying.");
+			break;
+
 		case CONDITION_CUSTOM_PHYSICAL:
 		sendTextMessage(MESSAGE_STATUS_DEFAULT, "You are cursed.");
 		break;
